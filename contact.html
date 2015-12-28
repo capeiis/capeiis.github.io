@@ -1,0 +1,185 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>CIIS | Contact</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript">
+        $(document).ready(function() {
+            $(".dropdown img.flag").addClass("flagvisibility");
+
+            $(".dropdown dt a").click(function() {
+                $(".dropdown dd ul").toggle();
+            });
+                        
+            $(".dropdown dd ul li a").click(function() {
+                var text = $(this).html();
+                $(".dropdown dt a span").html(text);
+                $(".dropdown dd ul").hide();
+                $("#result").html("Selected value is: " + getSelectedValue("sample"));
+            });
+                        
+            function getSelectedValue(id) {
+                return $("#" + id).find("dt a span.value").html();
+            }
+
+            $(document).bind('click', function(e) {
+                var $clicked = $(e.target);
+                if (! $clicked.parents().hasClass("dropdown"))
+                    $(".dropdown dd ul").hide();
+            });
+
+
+            $("#flagSwitcher").click(function() {
+                $(".dropdown img.flag").toggleClass("flagvisibility");
+            });
+        });
+     </script>
+ </head>
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="row">
+			  <div class="col-md-12">
+				 <div class="header-left">
+					 <div class="logo">
+						<a href="index.html"><img src="images/logo2.png" alt=""/></a>
+					 </div>
+					 <div class="menu">
+						  <a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
+						    <ul class="nav" id="nav">
+						    	<li><a href="index.html">Home</a></li>
+						    	<li><a href="services.html">Services</a></li>
+						    	<li><a href="blog.html">Blog</a></li>
+						    	<li><a href="gallery.html">Gallery</a></li>
+						    	<li><a href="about.html">About</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<div class="clear"></div>
+							</ul>
+							<script type="text/javascript" src="js/responsive-nav.js"></script>
+				    </div>							
+	    		    <div class="clear"></div>
+	    	    </div>
+	            <div class="header_right">
+	    		  <!-- start search-->
+				   <div class="search-box">
+							<div id="sb-search" class="sb-search">
+								<form>
+									<input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">
+									<input class="sb-search-submit" type="submit" value="">
+									<span class="sb-icon-search"> </span>
+								</form>
+							</div>
+						</div>
+						<!----search-scripts---->
+						<script src="js/classie.js"></script>
+						<script src="js/uisearch.js"></script>
+						<script>
+							new UISearch( document.getElementById( 'sb-search' ) );
+						</script>
+		        	<div class="clear"></div>
+	       </div>
+	      </div>
+		 </div>
+	    </div>
+	  </div>
+     <div class="main">
+      <div class="shop_top">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-7">
+				  <div class="map">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d206.91654068486508!2d18.42075782936335!3d-33.92402952803418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc6764880911b3%3A0xc3aa44d5eadfb148!2s106+Adderley+St%2C+Cape+Town+City+Centre%2C+Cape+Town%2C+8000!5e0!3m2!1sen!2sza!4v1451302669402" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				  </div>
+				</div>
+				<div class="col-md-5">
+					<p class="m_8">We'd be delighted if you got in touch with us. Below are our contact details. Our friendly and dedicated staff are standing by to help, support and answer all your questions.</p>
+					<div class="address">
+				                <p>106 Adderley Street,</p>
+						   		<p>Cape Town,</p>
+						   		<p>8000,</p>
+						   		<p>South Africa</p>
+				   		<p>Tel: +27 (0) 21 829 0006</p>
+				   		<p>Cell: +27 (0) 73 776 2092</p>
+				 	 	<p>Email: <span>capeiistudent2015@gmail.com</span></p>
+				   		<p>Follow on: <a href="https://facebook.com/capeiistudent">Facebook</a>, <a href="https://twitter.com/capeiistudent">Twitter</a></p>
+				   </div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 contact">
+					<h5 class="m_2">Notice: The form below is currently not linked to our email address until further notice. You may contact us at the details above.</h5>
+				  <form method="post" action="contact.html">
+					<div class="to">
+                     	<input type="text" class="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
+					 	<input type="text" class="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
+					 	<input type="text" class="text" value="Subject" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Subject';}">
+					</div>
+					<div class="text">
+	                   <textarea value="Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message:</textarea>
+	                   <div class="form-submit">
+			           <input name="submit" type="submit" id="submit" value="Submit"><br>
+			           </div>
+	                </div>
+	                <div class="clear"></div>
+                   </form>
+			     </div>
+		    </div>
+	     </div>
+	   </div>
+	  </div>
+<div class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<ul class="footer_box">
+							<h4>Services</h4>
+							<li><a href="services.html">Services</a></li>
+							<li><a href="services.html">How to proceed</a></li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<ul class="footer_box">
+							<h4>About</h4>
+							<li><a href="about.html">Team</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<ul class="footer_box">
+							<h4>Newsletter</h4>
+							<div class="footer_search">
+				    		   <form>
+				    			<input type="text" value="Enter your email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your email';}">
+				    			<input type="submit" value="Go">
+				    		   </form>
+					        </div>	
+							<ul class="social">	
+							  <li class="facebook"><a href="https://facebook.com/capeiistudent"><span> </span></a></li>
+							  <li class="google"><a href="https://plus.google.com/109430859255291023801"><span> </span></a></li>
+							  <li class="twitter"><a href="https://twitter.com/capeiistudent"><span> </span></a></li>							  				
+						    </ul>
+		   					
+						</ul>
+					</div>
+				</div>
+				<div class="row footer_bottom">
+				    <div class="copy">
+			           <p>Site by<a href="http://johnclaude.github.io" target="_blank"> John Claude</a></p>
+		            </div>
+   				</div>
+			</div>
+		</div>
+</body>	
+</html>

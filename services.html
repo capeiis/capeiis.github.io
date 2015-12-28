@@ -1,0 +1,182 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>CIIS | Services</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript">
+        $(document).ready(function() {
+            $(".dropdown img.flag").addClass("flagvisibility");
+
+            $(".dropdown dt a").click(function() {
+                $(".dropdown dd ul").toggle();
+            });
+                        
+            $(".dropdown dd ul li a").click(function() {
+                var text = $(this).html();
+                $(".dropdown dt a span").html(text);
+                $(".dropdown dd ul").hide();
+                $("#result").html("Selected value is: " + getSelectedValue("sample"));
+            });
+                        
+            function getSelectedValue(id) {
+                return $("#" + id).find("dt a span.value").html();
+            }
+
+            $(document).bind('click', function(e) {
+                var $clicked = $(e.target);
+                if (! $clicked.parents().hasClass("dropdown"))
+                    $(".dropdown dd ul").hide();
+            });
+
+
+            $("#flagSwitcher").click(function() {
+                $(".dropdown img.flag").toggleClass("flagvisibility");
+            });
+        });
+     </script>
+     <!-- Add fancyBox main JS and CSS files -->
+	<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+	<link href="css/magnific-popup.css" rel="stylesheet" type="text/css">
+		<script>
+			$(document).ready(function() {
+				$('.popup-with-zoom-anim').magnificPopup({
+					type: 'inline',
+					fixedContentPos: false,
+					fixedBgPos: true,
+					overflowY: 'auto',
+					closeBtnInside: true,
+					preloader: false,
+					midClick: true,
+					removalDelay: 300,
+					mainClass: 'my-mfp-zoom-in'
+			});
+		});
+		</script>
+</head>
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="row">
+			  <div class="col-md-12">
+				 <div class="header-left">
+					 <div class="logo">
+						<a href="index.html"><img src="images/logo2.png" alt=""/></a>
+					 </div>
+					 <div class="menu">
+						  <a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
+						    <ul class="nav" id="nav">
+						    	<li><a href="index.html">Home</a></li>
+						    	<li><a href="services.html">Services</a></li>
+						    	<li><a href="blog.html">Blog</a></li>
+						    	<li><a href="gallery.html">Gallery</a></li>
+						    	<li><a href="about.html">About</a></li>
+								<li><a href="contact.html">Contact</a></li>							
+								<div class="clear"></div>
+							</ul>
+							<script type="text/javascript" src="js/responsive-nav.js"></script>
+				    </div>							
+	    		    <div class="clear"></div>
+	    	    </div>
+	            <div class="header_right">
+	    		  <!-- start search-->
+				  <div class="search-box">
+							<div id="sb-search" class="sb-search">
+								<form>
+									<input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">
+									<input class="sb-search-submit" type="submit" value="">
+									<span class="sb-icon-search"> </span>
+								</form>
+							</div>
+						</div>
+						<!----search-scripts---->
+						<script src="js/classie.js"></script>
+						<script src="js/uisearch.js"></script>
+						<script>
+							new UISearch( document.getElementById( 'sb-search' ) );
+						</script>
+		        <div class="clear"></div>
+	       </div>
+	      </div>
+		 </div>
+	    </div>
+	  </div>
+     <div class="main">
+      <div class="shop_top">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h3 class="m_4">OUR SERVICES</h3>
+					<p class="m_5 to-left">Listed below are the services we offer. Feel free to <a href="contact.html">get in touch</a> with us for any inquiries.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-7 cool-pad-extra to-left">
+					<ul>
+						<li >Hospitality Training Academy (H.T.A)<br>Food and beverage as well as customer service training.</li>
+						<li class="cool-pad">Job placement</li>
+						<li class="cool-pad">Internship placement</li>
+						<li class="cool-pad">We help you find accommodation</li>
+						<li class="cool-pad">Adventures<ul><li>Cape Point</li><li>Robben Island</li><li>Tours and hikes of Table Mountain and surrounding mountains</li><li>Tours around Cape Town and more</li></ul></li>
+					</ul>
+					<h4 class="to-left cool-pad">How do we proceed?</h4>
+						<ul>
+							<li class="m_5">You <a href="contact.html">contact us</a> and make a request for an internship via our website</li>
+							<li class="m_5">One of our dedicated staff will contact you via email to start the process and will ask more details about your expectations.</li>
+							<li class="m_5">We will email you a form to fill out and you will email that form back to us accompanied by your CV and recent ID photo. Our team will then work with you to get the financials sorted.</li>
+						</ul>
+				</div>
+				<div class="col-md-5"><img src="images/servicespg.jpg" alt="setup" class="to-left"></div>
+			</div>
+		</div>
+	   </div>
+	  </div>
+	      <div class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5">
+						<ul class="footer_box">
+							<h4>Services</h4>
+							<li><a href="services.html">Services</a></li>
+							<li><a href="services.html">How to proceed</a></li>
+						</ul>
+					</div>
+					<div class="col-md-5">
+						<ul class="footer_box">
+							<h4>About</h4>
+							<li><a href="about.html">Team</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+					<div class="col-md-2">
+						<ul class="footer_box">
+					        </div>	
+							<ul class="social">	
+							  <li class="facebook"><a href="https://facebook.com/capeiistudent"><span> </span></a></li>
+							  <li class="google"><a href="https://plus.google.com/109430859255291023801"><span> </span></a></li>
+							  <li class="twitter"><a href="https://twitter.com/capeiistudent"><span> </span></a></li>							  				
+						    </ul>
+		   					
+						</ul>
+					</div>
+				</div>
+				<div class="row footer_bottom">
+				    <div class="copy">
+			           <p>Site by<a href="http://johnclaude.github.io" target="_blank"> John Claude</a></p>
+		            </div>
+   				</div>
+			</div>
+		</div>
+</body>	
+</html>
