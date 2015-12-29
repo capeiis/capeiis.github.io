@@ -73,10 +73,8 @@ body a{
 .nav ul {
     list-style: none;
 }
-
 .cool{
-	background-color: red;
-	background: url(../images/bg2.jpg)no-repeat center top; 
+	background-color: black;
 }
 .cool-h{
 	color: white;
