@@ -31,7 +31,7 @@ body a{
 }
 .menu{
 	 float:left;
-	 margin: 17px 0 0;
+	 margin: 20px 0 0;
 }
   .menu li{
 	display:inline-block;
@@ -92,6 +92,10 @@ div.to-left{
 	padding-left: 35px;
 }
 
+/* padding for Google Translate*/
+.translate{
+	padding-left: 20px;
+}
 .m_5{
 	color:#222;
 	font-size:0.85em;
